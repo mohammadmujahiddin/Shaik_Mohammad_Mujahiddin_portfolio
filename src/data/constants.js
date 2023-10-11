@@ -260,7 +260,7 @@ export const education = [
 ];
 
 export const projects = [
-  {
+  // {
     // id: 9,
     // title: "Trackify",
     // date: "Jun 2023 - Jul 2023",
