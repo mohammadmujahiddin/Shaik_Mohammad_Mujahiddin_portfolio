@@ -45,7 +45,7 @@ Welcome to my GitHub profile! I am a passionate technologist with a proven track
 - **Technologies**: Python, Pandas, Matplotlib, Seaborn
 - **Description**: Conducted a comprehensive analysis of job market trends, identifying in-demand skills and salary patterns. Developed Python scripts to process and visualize data, improving analysis accuracy by 25% and guiding career recommendations.
 
-### [Sales and Performance Analysis of Vrinda Store]
+### Sales and Performance Analysis of Vrinda Store
 - **Technologies**: Excel
 - **Description**: Cleaned and organized sales data, analyzed trends and product performance using pivot tables and charts. Applied forecasting techniques and generated a summary report with insights to support strategic decision-making and improve store performance.
 
