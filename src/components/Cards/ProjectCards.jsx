@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Button = styled.button`
     display: none;
     width: 100%;
@@ -15,6 +14,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
+
 const Card = styled.div`
     width: 330px;
     height: 490px;
@@ -71,6 +71,7 @@ const Details = styled.div`
     gap: 0px;
     padding: 0px 2px;
 `
+
 const Title = styled.div`
     font-size: 20px;
     font-weight: 600;
@@ -94,7 +95,6 @@ const Date = styled.div`
     }
 `
 
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -112,6 +112,7 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `
+
 const Avatar = styled.img`
     width: 38px;
     height: 38px;
@@ -122,13 +123,19 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({ project }) => {
+    const handleCardClick = () => {
+        if (project.githubUrl) {
+            window.open(project.githubUrl, '_blank');
+        }
+    }
+
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+        <Card onClick={handleCardClick}>
+            <Image src={project.image} alt={project.title} />
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -137,8 +144,8 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img} alt={`Member ${index + 1}`} />
                 ))}
             </Members>
             {/* <Button>View Project</Button> */}
@@ -146,4 +153,4 @@ const ProjectCards = ({project,setOpenModal}) => {
     )
 }
 
-export default ProjectCards
+export default ProjectCards;

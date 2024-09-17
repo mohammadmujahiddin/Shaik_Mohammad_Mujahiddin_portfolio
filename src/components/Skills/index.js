@@ -113,12 +113,6 @@ const SkillItem = styled.div`
   }
 `
 
-const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
-`
-
-
 const Skills = () => {
   return (
     <Container id="skills">
@@ -133,7 +127,6 @@ const Skills = () => {
               <SkillList>
                 {skill.skills.map((item) => (
                   <SkillItem>
-                    <SkillImage src={item.image}/>
                     {item.name}
                   </SkillItem>
                 ))}
