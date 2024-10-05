@@ -9,7 +9,7 @@ export const Bio = {
   description:
   "I am a passionate technologist with expertise in Full Stack Development (MERN stack), AWS Cloud, and Data Analytics. I have a proven track record of delivering impactful projects, such as improving restaurant reservation systems by 40% during my internship at Ethnus. With strong problem-solving and communication skills, I excel at optimizing processes, enhancing user experiences, and driving business results. Currently, I’m focused on leveraging my knowledge in programming, data analysis, and marketing strategy to make a difference in the tech industry.",
   github: "https://github.com/mohammadmujahiddin",
-  resume: "https://drive.google.com/file/d/1qoSpA3kbZdO5QWRiZUNJ52250DYfnr5b/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1BkuBxsFbBFWaopMBbjTCCL6zlfY5qUox/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mohammadmujahiddinshaik/",
   twitter: "https://twitter.com/mujju1212",
   insta: "https://www.instagram.com/skmdmd1212/",
